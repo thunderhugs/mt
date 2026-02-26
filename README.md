@@ -26,7 +26,12 @@ The site is optimized to index for:
 /
 ├── index.html          # Main HTML page with semantic markup and Schema.org data
 ├── styles.css          # CSS with logo-based color scheme
-├── logo.jpg            # Meowtown Cattery logo
+├── favicon.ico         # Site favicon (16×16, 32×32)
+├── files/
+│   ├── logo.png        # Meowtown Cattery logo (header/footer)
+│   ├── logo_master.png # Source: three logo variants for extraction
+│   ├── favicon-32x32.png
+│   └── apple-touch-icon.png
 ├── sitemap.xml         # XML sitemap for search engines
 ├── robots.txt          # Robots file for crawlers
 ├── CNAME               # Custom domain configuration for GitHub Pages
@@ -40,7 +45,8 @@ The site is optimized to index for:
 1. **Upload all files** to your web hosting root directory:
    - `index.html`
    - `styles.css`
-   - `logo.jpg`
+   - `favicon.ico`
+   - `files/` (logo.png, favicon-32x32.png, apple-touch-icon.png, etc.)
    - `sitemap.xml`
    - `robots.txt`
 
@@ -172,7 +178,7 @@ When the business launches, update:
 
 ### Performance
 
-- Keep images optimized (logo.jpg should be under 200KB)
+- Keep images optimized (e.g. files/logo.png under 200KB)
 - Monitor Core Web Vitals in Google Search Console
 - Consider adding more pages as business grows
 

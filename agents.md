@@ -2,9 +2,16 @@
 
 ## Project Overview
 
-This project is for a **Website** that publicizes a **Cattery business**. 
+This project is the **full website** for **Meowtown Cattery** — a premium cat boarding and cat hotel in Cambridge, Cambridgeshire. The site includes: Home, About, Facilities, Pricing, Booking, Find Us, FAQ, Contact, Terms and Privacy pages. Built with plain HTML, CSS and JavaScript (no framework, no build step). A backup of the original holding page is preserved on the `holding-page` branch.
 
-Presently, the page is intended just to be a **holding page** for the Website, prior to the launch of the business.
+### Local development
+
+To preview the site locally before pushing to GitHub, run a static server from the repository root:
+
+- **Python**: `python -m http.server 8000` then open http://localhost:8000
+- **Node**: `npx serve` or `npx live-server`
+
+You can also open `index.html` (and other pages) directly in a browser via file://.
 
 ## Project Details
 
