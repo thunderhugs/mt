@@ -39,7 +39,32 @@
           "geo": { "@type": "GeoCoordinates", "latitude": 52.246, "longitude": 0.248 },
           "email": "meowtowncattery@gmail.com",
           "priceRange": "££",
-          "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59" }
+          "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5", "worstRating": "1" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Anna-Maria Saeb-Parsy" },
+          "datePublished": "2026-04-07",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "My cat recently stayed at Meowtown and had a great experience. Rue clearly loves cats and took wonderful care of him, giving him lots of attention and affection, which he really enjoys. He can be a little nervous at first, but Rue was very patient and helped him settle in quickly. It's a smaller cattery, which I think is a real advantage as it means each cat gets plenty of love and individual attention. I'd definitely recommend Meowtown and would not hesitate to go back!",
+          "itemReviewed": { "@id": "https://www.meowtowncattery.com/#organization" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Yaroslav Litvinov" },
+          "datePublished": "2026-03-22",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "The cat suites are spacious, warm, and thoughtfully designed with everything needed to keep furry guests comfortable and happy. There are scratching posts, cat trees, elevated spots to explore, cozy hiding places, and plenty of fresh air. Rue was incredibly helpful and flexible with check-in and check-out times, which made everything so much easier. Thank you so much for taking such great care of my cat, Bubble!",
+          "itemReviewed": { "@id": "https://www.meowtowncattery.com/#organization" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Alex" },
+          "datePublished": "2026-04-07",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I haven't used the cattery yet but was very impressed on looking round. The facilities are clean, neat and well-organised and the owner is very knowledgeable about cat care. I know that my cats would be very well looked after here.",
+          "itemReviewed": { "@id": "https://www.meowtowncattery.com/#organization" }
         },
         {
           "@type": "Service",
@@ -162,6 +187,49 @@
                     <div class="gallery-item"><img src="files/cambridge-cattery-cat-5.jpg" alt="Kitten peeking from bed" width="400" height="300" loading="lazy"></div>
                     <div class="gallery-item"><img src="files/cat-golden-british-shorthair-belly-up-run.jpg" alt="Golden British Shorthair enjoying its run at Meowtown Cattery" width="400" height="300" loading="lazy"></div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section" itemscope itemtype="https://schema.org/LocalBusiness">
+            <meta itemprop="name" content="Meowtown Cattery">
+            <div class="container">
+                <span class="section-label">What Our Guests Say</span>
+                <h2 style="text-align: center;">Trusted by Cat Owners in Cambridge</h2>
+                <div class="testimonials-grid" style="margin-top: 2rem;">
+
+                    <div class="testimonial-card animate-on-scroll"
+                         itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
+                        <blockquote itemprop="reviewBody">My cat recently stayed at Meowtown and had a great experience. Rue clearly loves cats and took wonderful care of him, giving him lots of attention and affection, which he really enjoys. He can be a little nervous at first, but Rue was very patient and helped him settle in quickly. It's a smaller cattery, which I think is a real advantage as it means each cat gets plenty of love and individual attention. I'd definitely recommend Meowtown and would not hesitate to go back!</blockquote>
+                        <p class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Anna-Maria Saeb-Parsy</span></p>
+                        <meta itemprop="datePublished" content="2026-04-07">
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll"
+                         itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
+                        <blockquote itemprop="reviewBody">The cat suites are spacious, warm, and thoughtfully designed with everything needed to keep furry guests comfortable and happy. There are scratching posts, cat trees, elevated spots to explore, cozy hiding places, and plenty of fresh air. Rue was incredibly helpful and flexible with check-in and check-out times, which made everything so much easier. Thank you so much for taking such great care of my cat, Bubble!</blockquote>
+                        <p class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Yaroslav Litvinov</span></p>
+                        <span class="cat-name">Cat: Bubble</span>
+                        <meta itemprop="datePublished" content="2026-03-22">
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll"
+                         itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
+                        <blockquote itemprop="reviewBody">I haven't used the cattery yet but was very impressed on looking round. The facilities are clean, neat and well-organised and the owner is very knowledgeable about cat care. I know that my cats would be very well looked after here.</blockquote>
+                        <p class="author" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alex</span></p>
+                        <meta itemprop="datePublished" content="2026-04-07">
+                    </div>
+
+                </div>
+                <p style="text-align: center; margin-top: 1.5rem;">
+                    <a href="https://www.google.com/search?q=Meowtown+Cattery&stick=H4sIAAAAAAAA_-NgU1I1qDAxT7EwSzNITTW2sEhLSU2xMqhITDU0TTEzNE9OSzRMtkg1W8Qq4JuaX16SX56n4JxYUpJaVAkAmoXk3zwAAAA&hl=en&mat=CcyAPHL1K72pElcBTVDHnikS3xlltv94LC6LEUumLsOplpZ77mtWkjVFrKAwzMvirGxy6tGYadpCdLCDjkC8eLlKwzvfVsC3bBITpPqpn5XwfUuzTdxW6OXj6HRDaji3sJg&authuser=0#" class="link-sage" target="_blank" rel="noopener">Read more reviews on Google →</a>
+                </p>
             </div>
         </section>
 
