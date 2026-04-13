@@ -49,6 +49,34 @@ You can also open `index.html` (and other pages) directly in a browser via file:
 - **CNAME Record**: Configured for www subdomain pointing to thunderhugs.github.io
 - See DNS_SETUP.md for complete DNS configuration instructions
 
+## Reference Folder
+
+The `reference/` folder at the repo root exists for **reference-only** material (e.g. design mocks, copy drafts, external docs, screenshots). It is **gitignored**; nothing inside it is committed or deployed.
+
+**Core files** are any files that are part of the live site or repo integrity, including: all `*.html`, `styles.css`, `main.js`, everything under `files/`, `CNAME`, `sitemap.xml`, `robots.txt`, `favicon.ico`, and any script or config that affects the site or deployment.
+
+**Rule**: Never write, move, or copy core files into `reference/`. Only reference material (drafts, mocks, external docs, assets not used in the site) may be placed there.
+
+## Business operation (from booking/consent form)
+
+Core details for copy, terms, FAQ and future iterations. Authoritative form: `reference/booking-and-consent-form.md`.
+
+- **Trading name / branding:** Meowtown Cattery (form uses "Meow Town Cattery" — confirm preferred spelling with owner if needed).
+- **Address:** 7 Mill Road, Lode, Cambridgeshire, CB25 9EN. Licence: 25/04678/ANIMAL.
+- **Contact:** Phone 07462 290560. Email meowtowncattery@gmail.com. We try to respond to WhatsApp as well.
+- **Opening hours:** Flexible (home-based; effectively always open). Drop-off & collection by arrangement. *Note: The printed booking form's fixed hours are inaccurate; do not use them on the website or in future copy.*
+- **Booking & payment:** By appointment only. Full payment at point of booking.
+- **Cancellation:** 14 days' notice to amend/cancel; after that no refund.
+- **Stay rules:** Minimum 3 days (2 nights). Part days = full days; arrival and departure days each count as full days. £10/day surcharge for Christmas Day, Boxing Day, New Year's Day.
+- **Vaccination:** Feline Enteritis and Feline Flu (influenza). Proof mandatory before boarding or at booking in.
+- **Neutering:** All male cats over 6 months must be neutered.
+- **Food:** Food is **included** (e.g. Felix, Whiskas, Purina, Sheba, GoCat). Owners provide food **only if** their cat has **special dietary requirements**. Also included: treats, bedding, litter, toys, daily grooming, daily play.
+- **Vet/medication:** Permission to give medication/parasite treatment as needed or as advised by vet; try owner's vet first, may use cattery's; infectious isolation at Lida vets, charged to owner.
+- **Liability:** Not responsible for illness, disease, death, loss in care or during transport, or property damage/loss; cats at owner's risk.
+- **Sharing:** Only cats from same household; owner consents to separation if required.
+- **Rehoming:** If no contact 14 days after collection date, rehome after all efforts to make contact.
+- **Medical history:** Owner must inform at booking and/or on day of arrival.
+
 ## Maintenance Instructions
 
 **IMPORTANT**: Whenever new information that is critical to the maintenance of this project is discovered or created, it **MUST** be documented in this `agents.md` file. This ensures that AI agents and future maintainers have a single source of truth for all critical project information.
