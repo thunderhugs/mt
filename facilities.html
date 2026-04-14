@@ -12,7 +12,9 @@
     <link rel="canonical" href="https://www.meowtowncattery.com/facilities.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap"></noscript>
+    <link rel="preload" as="image" imagesrcset="files/interior-run-overhead-view-wheel-toys.webp" imagesizes="100vw">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
@@ -21,7 +23,7 @@
 <body>
     <header class="site-header" role="banner">
         <div class="header-inner">
-            <a href="index.html" class="header-logo" aria-label="Meowtown Cattery home"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></a>
+            <a href="index.html" class="header-logo" aria-label="Meowtown Cattery home"><picture><source srcset="files/logo.webp" type="image/webp"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></picture></a>
             <nav class="nav-desktop" aria-label="Main navigation">
                 <a href="about.html">About</a>
                 <a href="facilities.html" class="active">Facilities</a>
@@ -52,7 +54,11 @@
     </div>
 
     <main role="main">
-        <section class="hero-half" style="background-image: url('files/interior-run-overhead-view-wheel-toys.jpg');">
+        <section class="hero-half">
+            <picture>
+                <source srcset="files/interior-run-overhead-view-wheel-toys.webp" type="image/webp">
+                <img src="files/interior-run-overhead-view-wheel-toys.jpg" alt="" class="hero-bg" width="1536" height="2048">
+            </picture>
             <div class="container">
                 <h1>Facilities</h1>
             </div>
@@ -71,7 +77,10 @@
                 <h2>Accommodation</h2>
                 <div class="split-section animate-on-scroll" style="margin-bottom: 3rem;">
                     <div class="split-image">
-                        <img src="files/interior-run-scratching-post-toys-unit-a.jpg" alt="Standard chalet run at Meowtown — scratching post and enrichment toys" width="800" height="600" loading="lazy">
+                        <picture>
+                            <source srcset="files/interior-run-scratching-post-toys-unit-a.webp" type="image/webp">
+                            <img src="files/interior-run-scratching-post-toys-unit-a.jpg" alt="Standard chalet run at Meowtown — scratching post and enrichment toys" width="800" height="600" loading="lazy">
+                        </picture>
                     </div>
                     <div>
                         <h3>Standard Chalet</h3>
@@ -86,7 +95,10 @@
                         <p><strong>Included:</strong> Everything in the standard chalet, with extra room for multiple cats and their belongings.</p>
                     </div>
                     <div class="split-image">
-                        <img src="files/interior-run-cat-tree-camera-unit-b.jpg" alt="Family suite run at Meowtown — cat tree and enrichment in unit B" width="800" height="600" loading="lazy">
+                        <picture>
+                            <source srcset="files/interior-run-cat-tree-camera-unit-b.webp" type="image/webp">
+                            <img src="files/interior-run-cat-tree-camera-unit-b.jpg" alt="Family suite run at Meowtown — cat tree and enrichment in unit B" width="800" height="600" loading="lazy">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -117,14 +129,14 @@
         <section class="section">
             <div class="container">
                 <div class="gallery-strip animate-on-scroll">
-                    <div class="gallery-item"><img src="files/cambridge-cattery-entrance-1.jpg" alt="Entrance to Meowtown Cattery chalets, Cambridge" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cat-tabby-brown-litter-tray-run.jpg" alt="Tabby cat in its run at Meowtown Cattery" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cambridge-cattery-chalet-1.jpg" alt="Heated chalet interior for cat boarding" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cambridge-cattery-chalet-2.jpg" alt="Family suite for cats at Cambridge cattery" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cat-golden-british-shorthair-walking-run.jpg" alt="Golden British Shorthair exploring its run at Meowtown" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cambridge-cattery-cat-2.jpg" alt="Cat in outdoor run at Cambridge cat hotel" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cambridge-cattery-cat-4.jpg" alt="Kittens in a cosy bed" width="400" height="300" loading="lazy"></div>
-                    <div class="gallery-item"><img src="files/cambridge-cattery-cat-5.jpg" alt="Kitten peeking from bed" width="400" height="300" loading="lazy"></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-entrance-1.webp" type="image/webp"><img src="files/cambridge-cattery-entrance-1.jpg" alt="Entrance to Meowtown Cattery chalets, Cambridge" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cat-tabby-brown-litter-tray-run.webp" type="image/webp"><img src="files/cat-tabby-brown-litter-tray-run.jpg" alt="Tabby cat in its run at Meowtown Cattery" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-chalet-1.webp" type="image/webp"><img src="files/cambridge-cattery-chalet-1.jpg" alt="Heated chalet interior for cat boarding" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-chalet-2.webp" type="image/webp"><img src="files/cambridge-cattery-chalet-2.jpg" alt="Family suite for cats at Cambridge cattery" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cat-golden-british-shorthair-walking-run.webp" type="image/webp"><img src="files/cat-golden-british-shorthair-walking-run.jpg" alt="Golden British Shorthair exploring its run at Meowtown" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-cat-2.webp" type="image/webp"><img src="files/cambridge-cattery-cat-2.jpg" alt="Cat in outdoor run at Cambridge cat hotel" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-cat-4.webp" type="image/webp"><img src="files/cambridge-cattery-cat-4.jpg" alt="Kittens in a cosy bed" width="400" height="300" loading="lazy"></picture></div>
+                    <div class="gallery-item"><picture><source srcset="files/cambridge-cattery-cat-5.webp" type="image/webp"><img src="files/cambridge-cattery-cat-5.jpg" alt="Kitten peeking from bed" width="400" height="300" loading="lazy"></picture></div>
                 </div>
             </div>
         </section>
@@ -132,12 +144,12 @@
 
     <footer class="site-footer" role="contentinfo">
         <div class="footer-grid">
-            <div class="footer-col"><a href="index.html"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></a><p class="tagline">Luxury cat boarding in Cambridge</p></div>
+            <div class="footer-col"><a href="index.html"><picture><source srcset="files/logo.webp" type="image/webp"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></picture></a><p class="tagline">Luxury cat boarding in Cambridge</p></div>
             <div class="footer-col"><h4>Quick links</h4><ul><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="booking.html">Booking</a></li><li><a href="find-us.html">Find Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
             <div class="footer-col"><h4>Contact</h4><!-- <p><a href="tel:07462290560">07462 290560</a></p> --><p><a href="mailto:meowtowncattery@gmail.com">meowtowncattery@gmail.com</a></p><p class="hours-note">Drop-off &amp; collection by arrangement. Home-based, flexible.</p></div>
         </div>
         <div class="footer-bottom"><span>© <span id="year">2025</span> Meowtown Cattery</span><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
     </footer>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

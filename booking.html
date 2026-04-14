@@ -12,7 +12,9 @@
     <link rel="canonical" href="https://www.meowtowncattery.com/booking.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap"></noscript>
+    <link rel="preload" as="image" imagesrcset="files/cambridge-cattery-cat-1.webp" imagesizes="100vw">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
@@ -21,7 +23,7 @@
 <body>
     <header class="site-header" role="banner">
         <div class="header-inner">
-            <a href="index.html" class="header-logo" aria-label="Meowtown Cattery home"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></a>
+            <a href="index.html" class="header-logo" aria-label="Meowtown Cattery home"><picture><source srcset="files/logo.webp" type="image/webp"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></picture></a>
             <nav class="nav-desktop" aria-label="Main navigation">
                 <a href="about.html">About</a>
                 <a href="facilities.html">Facilities</a>
@@ -52,7 +54,11 @@
     </div>
 
     <main role="main">
-        <section class="hero-half" style="background-image: url('files/cambridge-cattery-cat-1.jpg');">
+        <section class="hero-half">
+            <picture>
+                <source srcset="files/cambridge-cattery-cat-1.webp" type="image/webp">
+                <img src="files/cambridge-cattery-cat-1.jpg" alt="" class="hero-bg" width="2048" height="1536">
+            </picture>
             <div class="container">
                 <h1>Book Your Cat's Stay</h1>
             </div>
@@ -116,12 +122,12 @@
 
     <footer class="site-footer" role="contentinfo">
         <div class="footer-grid">
-            <div class="footer-col"><a href="index.html"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></a><p class="tagline">Luxury cat boarding in Cambridge</p></div>
+            <div class="footer-col"><a href="index.html"><picture><source srcset="files/logo.webp" type="image/webp"><img src="files/logo.png" alt="Meowtown Cattery" width="120" height="44"></picture></a><p class="tagline">Luxury cat boarding in Cambridge</p></div>
             <div class="footer-col"><h4>Quick links</h4><ul><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="booking.html">Booking</a></li><li><a href="find-us.html">Find Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
             <div class="footer-col"><h4>Contact</h4><!-- <p><a href="tel:07462290560">07462 290560</a></p> --><p><a href="mailto:meowtowncattery@gmail.com">meowtowncattery@gmail.com</a></p><p class="hours-note">Drop-off &amp; collection by arrangement. Home-based, flexible.</p></div>
         </div>
         <div class="footer-bottom"><span>© <span id="year">2025</span> Meowtown Cattery</span><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div>
     </footer>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

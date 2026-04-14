@@ -1,0 +1,22 @@
+# Netlify / Cloudflare Pages cache-control headers
+# NOTE: This file is IGNORED by GitHub Pages.
+# To activate these headers, migrate the site to Netlify, Cloudflare Pages, or Vercel,
+# or configure equivalent rules in a Cloudflare proxy sitting in front of GitHub Pages.
+
+# Static assets with content hashes — cache 1 year, immutable
+/files/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS and JS — cache 1 day (no hash in filename)
+/styles.css
+  Cache-Control: public, max-age=86400
+
+/main.js
+  Cache-Control: public, max-age=86400
+
+# HTML pages — cache 10 minutes (content changes regularly)
+/*.html
+  Cache-Control: public, max-age=600
+
+/
+  Cache-Control: public, max-age=600
